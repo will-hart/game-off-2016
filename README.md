@@ -22,3 +22,18 @@ A number of the assets used to support development were paid assets and unfortun
 - TextMesh Pro
 - Unitilities
 - UniRx
+
+## Limitations
+
+- The AI is overly aggressive. This can lead to very short games
+- There is no menu, when you win or lose the game exits
+- There are no tool tips on the UI
+- There are about 20 issues in our issue tracker still, although hopefully none are game breaking :P
+
+## License
+
+See `LICENSE` in the repo
+
+## Download
+
+A build is available from https://www.dropbox.com/s/abhgh1fvdyf91bk/RTS_Win.zip?dl=0 or https://drive.google.com/open?id=0B9l1RNzlYNWTdGw4YzYzNVBxZjA
