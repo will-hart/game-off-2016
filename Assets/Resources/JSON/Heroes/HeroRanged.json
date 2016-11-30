@@ -1,0 +1,85 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "AvailableWeaponsComp": {
+            "availableWeaponsList": [
+                {
+                    "baseDamage": 10,
+                    "pierceDamage": 10,
+                    "attackRange": 30.0,
+                    "canHitAirUnits": true,
+                    "DamageMode": "Single",
+                    "AttackType": "Ranged",
+                    "attackSpeed": 1.0
+                }
+            ],
+            "$type": "AvailableWeaponsComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "HeroRangedIcon",
+            "$type": "SelectableUnitComp"
+        },
+        "CombatComp": {
+            "MeleeDamageMultiplier": 1.5,
+            "RangedDamageMultiplier": 1.5,
+            "EnemiesInRange": [],
+            "$type": "CombatComp"
+        },
+        "HealthComp": {
+            "maxHealth": 300.0,
+            "currentHealth": 300.0,
+            "regenRate": 1,
+            "armorValue": 10,
+            "$type": "HealthComp"
+        },
+        "MovementComp": {
+            "moveSpeed": 20.0,
+            "currentMoveSpeed": 0.0,
+            "movementType": "Ground",
+            "$type": "MovementComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "HeroComp": {
+            "Name": "RangedHeroName",
+            "Abilities": [],
+            "MaxCreeps": 20,
+            "DeployedCreeps": 0,
+            "$type": "HeroComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 60,
+            "ScoutVisionRange": 20,
+            "$type": "InfluenceComp"
+        },
+        "TacticalAiStateComp": {
+            "Stance": "Offensive",
+            "NavigationTarget": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NextAiPlanTime": 0.0,
+            "$type": "TacticalAiStateComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "RangedHeroPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "AudioSourceComp": {
+            "$type": "AudioSourceComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 0,
+            "$type": "UnitPropertiesComp"
+        },
+        "MissileComp": {
+            "ProjectileType": "Laser",
+            "$type": "MissileComp"
+        }
+    },
+    "EntityName": "HeroRanged"
+}

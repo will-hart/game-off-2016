@@ -1,0 +1,78 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "AvailableWeaponsComp": {
+            "availableWeaponsList": [
+                {
+                    "baseDamage": 10,
+                    "pierceDamage": 10,
+                    "attackRange": 30.0,
+                    "canHitAirUnits": true,
+                    "DamageMode": "Single",
+                    "AttackType": "Ranged",
+                    "attackSpeed": 1.0
+                }
+            ],
+            "$type": "AvailableWeaponsComp"
+        },
+        "CombatComp": {
+            "MeleeDamageMultiplier": 1.0,
+            "RangedDamageMultiplier": 1.0,
+            "EnemiesInRange": [],
+            "$type": "CombatComp"
+        },
+        "HealthComp": {
+            "maxHealth": 10.0,
+            "currentHealth": 10.0,
+            "regenRate": 1.0,
+            "armorValue": 10,
+            "$type": "HealthComp"
+        },
+        "MovementComp": {
+            "moveSpeed": 20.0,
+            "currentMoveSpeed": 0.0,
+            "movementType": "Ground",
+            "$type": "MovementComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        },
+        "CreepComp": {
+            "CreepId": 1,
+            "AssignedHero": null,
+            "ConstructionCost": 10.0,
+            "$type": "CreepComp"
+        },
+        "MissileComp": {
+            "ProjectileType": "Laser",
+            "$type": "MissileComp"
+        },
+        "TacticalAiStateComp": {
+            "Stance": "Offensive",
+            "NavigationTarget": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NextAiPlanTime": 0.0,
+            "$type": "TacticalAiStateComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "RangedCreepPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "AudioSourceComp": {
+            "$type": "AudioSourceComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 15,
+            "ScoutVisionRange": 10,
+            "$type": "InfluenceComp"
+        }
+    },
+    "EntityName": "RangedCreep1"
+}

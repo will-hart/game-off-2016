@@ -1,0 +1,31 @@
+{
+    "CameraScrollSpeed": 50.0,
+    "CameraZoomSpeed": 50.0,
+    "CameraRotationSpeed": 50.0,
+    "mousePanMultiplier": 0.1,
+    "mouseRotationMultiplier": 0.2,
+    "mouseZoomMultiplier": 5.0,
+    "minZoomDistance": 20.0,
+    "maxZoomDistance": 200.0,
+    "smoothingFactor": 0.1,
+    "goToSpeed": 0.1,
+    "useKeyboardInput": true,
+    "useMouseInput": true,
+    "adaptToTerrainHeight": true,
+    "increaseSpeedWhenZoomedOut": true,
+    "correctZoomingOutRatio": true,
+    "smoothing": true,
+    "allowDoubleClickMovement": false,
+    "allowScreenEdgeMovement": false,
+    "screenEdgeSize": 10,
+    "screenEdgeSpeed": 1.0,
+    "objectToFollow": {
+        "Tags": 0
+    },
+    "cameraTarget": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+    },
+    "Owner": null
+}

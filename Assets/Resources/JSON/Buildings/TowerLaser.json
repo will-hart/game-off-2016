@@ -1,0 +1,79 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "HealthComp": {
+            "maxHealth": 300.0,
+            "currentHealth": 300.0,
+            "regenRate": 1.0,
+            "armorValue": 20,
+            "$type": "HealthComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "TowerLaserIcon",
+            "$type": "SelectableUnitComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 200,
+            "ConstructionTime": 5.0,
+            "ConstructionPercentage": 0.0,
+            "buildingType": "LaserTower",
+            "$type": "BuildingComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingLaserTowerPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        },
+        "AvailableWeaponsComp": {
+            "availableWeaponsList": [
+                {
+                    "baseDamage": 20,
+                    "pierceDamage": 5,
+                    "attackRange": 30.0,
+                    "canHitAirUnits": true,
+                    "DamageMode": "Single",
+                    "AttackType": "Ranged",
+                    "attackSpeed": 2.0
+                }
+            ],
+            "$type": "AvailableWeaponsComp"
+        },
+        "MissileComp": {
+            "ProjectileType": "Laser",
+            "$type": "MissileComp"
+        },
+        "CombatComp": {
+            "MeleeDamageMultiplier": 1.0,
+            "RangedDamageMultiplier": 1.2,
+            "EnemiesInRange": [],
+            "$type": "CombatComp"
+        },
+        "TacticalAiStateComp": {
+            "Stance": "Offensive",
+            "NavigationTarget": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NextAiPlanTime": 0.0,
+            "$type": "TacticalAiStateComp"
+        },
+        "TowerComp": {
+            "$type": "TowerComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 70,
+            "ScoutVisionRange": 40,
+            "$type": "InfluenceComp"
+        }
+    },
+    "EntityName": "TowerLaser"
+}

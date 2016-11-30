@@ -1,0 +1,28 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "SidePropertiesComp": {
+            "IsPlayerControlled": true,
+            "SideId": 1,
+            "Dna": 10,
+            "SpecialDna": 0,
+            "TowerCount": 0,
+            "HeroLimit": 6,
+            "UnlockedUpgrades": [],
+            "$type": "SidePropertiesComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 50,
+            "ScoutVisionRange": 0,
+            "$type": "InfluenceComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        }
+    },
+    "EntityName": "SideA"
+}

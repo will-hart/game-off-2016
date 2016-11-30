@@ -1,0 +1,46 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "HealthComp": {
+            "maxHealth": 250.0,
+            "currentHealth": 250.0,
+            "regenRate": 1.0,
+            "armorValue": 20,
+            "$type": "HealthComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "FactoryIcon",
+            "$type": "SelectableUnitComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 200,
+            "ConstructionTime": 5.0,
+            "ConstructionPercentage": 0.0,
+            "buildingType": "BaseFactory",
+            "$type": "BuildingComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingFactoryPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        },
+        "BuildingUpgradeComp": {
+            "possibleBuildingTypes": "RangedCreepProduction,MeleeCreepProduction",
+            "$type": "BuildingUpgradeComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 20,
+            "ScoutVisionRange": 20,
+            "$type": "InfluenceComp"
+        }
+    },
+    "EntityName": "BaseFactory"
+}

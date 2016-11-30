@@ -1,0 +1,1 @@
+: terrain > large buildings > large troops > small buildings > small troops

@@ -1,0 +1,79 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "HealthComp": {
+            "maxHealth": 250.0,
+            "currentHealth": 250.0,
+            "regenRate": 1.0,
+            "armorValue": 20,
+            "$type": "HealthComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "TowerMissileIcon",
+            "$type": "SelectableUnitComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 200,
+            "ConstructionTime": 5.0,
+            "ConstructionPercentage": 0.0,
+            "buildingType": "MissileTower",
+            "$type": "BuildingComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingMissileTowerPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        },
+        "AvailableWeaponsComp": {
+            "availableWeaponsList": [
+                {
+                    "baseDamage": 50,
+                    "pierceDamage": 5,
+                    "attackRange": 30.0,
+                    "canHitAirUnits": true,
+                    "DamageMode": "Single",
+                    "AttackType": "Ranged",
+                    "attackSpeed": 2.0
+                }
+            ],
+            "$type": "AvailableWeaponsComp"
+        },
+        "MissileComp": {
+            "ProjectileType": "LineRender",
+            "$type": "MissileComp"
+        },
+        "CombatComp": {
+            "MeleeDamageMultiplier": 1.0,
+            "RangedDamageMultiplier": 1.2,
+            "EnemiesInRange": [],
+            "$type": "CombatComp"
+        },
+        "TacticalAiStateComp": {
+            "Stance": "Offensive",
+            "NavigationTarget": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NextAiPlanTime": 0.0,
+            "$type": "TacticalAiStateComp"
+        },
+        "TowerComp": {
+            "$type": "TowerComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 70,
+            "ScoutVisionRange": 45,
+            "$type": "InfluenceComp"
+        }
+    },
+    "EntityName": "TowerMissile"
+}

@@ -1,0 +1,27 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "ResourceProductionComp": {
+            "NextProductionTime": 0.0,
+            "ProductionPeriod": 2.0,
+            "ProductionQuantity": 6,
+            "OwningSideId": 0,
+            "IsCapped": false,
+            "CapPercent": 0.0,
+            "CapDistance": 15.0,
+            "$type": "ResourceProductionComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingResourcePointPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        }
+    },
+    "EntityName": "BuildingResourcePoint"
+}

@@ -1,0 +1,1434 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: PulseCannon
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 46.42065, y: 41.125572, z: 2.1073546}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95bdfe7476280ba478ac44cdcba5b058, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  arcs:
+  - material: {fileID: 2100000, guid: bc9b4591c08a2ed4fbd35d64e5b2437b, type: 2}
+    colorOptions:
+      startColor:
+        key0:
+          serializedVersion: 2
+          rgba: 9013669
+        key1:
+          serializedVersion: 2
+          rgba: 4288906364
+        key2:
+          serializedVersion: 2
+          rgba: 4285306505
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      onlyStartColor: 1
+      endColor:
+        key0:
+          serializedVersion: 2
+          rgba: 39423
+        key1:
+          serializedVersion: 2
+          rgba: 4278224127
+        key2:
+          serializedVersion: 2
+          rgba: 4278190335
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 65535
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 4
+      coreColor:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      coreCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0.092396036
+          outSlope: 0.092396036
+          tangentMode: 10
+        - time: 0.9244009
+          value: 0.08541098
+          inSlope: -0.51869637
+          outSlope: -0.51869637
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -1.1297888
+          outSlope: -1.1297888
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      coreJitter: 0.1
+      fade: 1
+      fadePoint: 1
+    sizeOptions:
+      interpolation: 0
+      startWidthCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 0.41633373
+          outSlope: 0.41633373
+          tangentMode: 10
+        - time: 0.60044765
+          value: 0.24998662
+          inSlope: 1.1628612
+          outSlope: 1.1628612
+          tangentMode: 0
+        - time: 0.980198
+          value: 0.24423215
+          inSlope: -6.17444
+          outSlope: -6.17444
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -12.333727
+          outSlope: -12.333727
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      onlyStartWidth: 1
+      endWidthCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+      segmentLength: 20
+      snapSegmentsToShape: 0
+      numberOfSmoothingSegments: 50
+      minNumberOfSegments: 1
+    propagationOptions:
+      propagationType: 0
+      globalSpeed: 5
+      timeCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+    emissionOptions: []
+    spatialNoise:
+    - type: 0
+      scale: 10
+      scaleMovement: 1
+      resetFrequency: 0
+      invisiblePriority: 0
+    textureOptions:
+      shapeTexture: {fileID: 0}
+      noiseTexture: {fileID: 0}
+      noiseCoef:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      animateTexture: 0
+      tileSize: 0
+      noiseSpeed: 0
+    lightsOptions:
+      lights: 1
+      lightsRange: 6
+      lightsIntensityMultiplyer: 10
+      renderMode: 0
+      priority: 0
+    flaresOptions:
+      startFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0
+        maxBrightnessDistance: 0
+        minBrightness: 0
+        minBrightnessDistance: 0
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      endFlare:
+        enabled: 1
+        flare: {fileID: 12100000, guid: bc8d761cacc3740fbab1c96eb12fe12f, type: 2}
+        fadeSpeed: 50
+        maxBrightness: 1
+        maxBrightnessDistance: 0
+        minBrightness: 0.05
+        minBrightnessDistance: 100
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      useNoiseMask: 0
+      noiseMaskPowerCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    nesting:
+      Nested: 0
+      parentArcIndex: 0
+      combinedNesting: 0
+      secondaryArcIndex: 0
+      nestingCoef: 0
+    oscillations: []
+    shapeCurves: []
+  - material: {fileID: 2100000, guid: bc9b4591c08a2ed4fbd35d64e5b2437b, type: 2}
+    colorOptions:
+      startColor:
+        key0:
+          serializedVersion: 2
+          rgba: 15532287
+        key1:
+          serializedVersion: 2
+          rgba: 4278251007
+        key2:
+          serializedVersion: 2
+          rgba: 4278255580
+        key3:
+          serializedVersion: 2
+          rgba: 16774144
+        key4:
+          serializedVersion: 2
+          rgba: 16711752
+        key5:
+          serializedVersion: 2
+          rgba: 16253183
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 35483
+        ctime4: 44776
+        ctime5: 65535
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      onlyStartColor: 1
+      endColor:
+        key0:
+          serializedVersion: 2
+          rgba: 16731136
+        key1:
+          serializedVersion: 2
+          rgba: 4294901769
+        key2:
+          serializedVersion: 2
+          rgba: 4294923776
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      coreColor:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      coreCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 1.2139915
+          outSlope: 1.2139915
+          tangentMode: 10
+        - time: 0.4995161
+          value: 0.6064083
+          inSlope: 0.0011737347
+          outSlope: 0.0011737347
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -1.211644
+          outSlope: -1.211644
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      coreJitter: 0
+      fade: 1
+      fadePoint: 1
+    sizeOptions:
+      interpolation: 0
+      startWidthCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 3.1400113
+          outSlope: 3.1400113
+          tangentMode: 10
+        - time: 0.052606378
+          value: 0.16518462
+          inSlope: 1.4828272
+          outSlope: 1.4828272
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -0.17435691
+          outSlope: -0.17435691
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      onlyStartWidth: 1
+      endWidthCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+      segmentLength: 1
+      snapSegmentsToShape: 0
+      numberOfSmoothingSegments: 5
+      minNumberOfSegments: 1
+    propagationOptions:
+      propagationType: 1
+      globalSpeed: 50
+      timeCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+    emissionOptions: []
+    spatialNoise: []
+    textureOptions:
+      shapeTexture: {fileID: 0}
+      noiseTexture: {fileID: 0}
+      noiseCoef:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      animateTexture: 0
+      tileSize: 0
+      noiseSpeed: 0
+    lightsOptions:
+      lights: 0
+      lightsRange: 6
+      lightsIntensityMultiplyer: 10
+      renderMode: 0
+      priority: 0
+    flaresOptions:
+      startFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0
+        maxBrightnessDistance: 0
+        minBrightness: 0
+        minBrightnessDistance: 0
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      endFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0.5
+        maxBrightnessDistance: 0
+        minBrightness: 0.1
+        minBrightnessDistance: 50
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      useNoiseMask: 0
+      noiseMaskPowerCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    nesting:
+      Nested: 1
+      parentArcIndex: 0
+      combinedNesting: 0
+      secondaryArcIndex: 0
+      nestingCoef: 0
+    oscillations:
+    - type: 0
+      swirl: 0
+      planeRotation: 0
+      wavelength: 25
+      integerPeriods: 0
+      metric: 0
+      amplitude: 0.5
+      phase: 0
+      phaseMovementSpeed: 60
+      invisiblePriority: 0
+    shapeCurves: []
+  - material: {fileID: 2100000, guid: bc9b4591c08a2ed4fbd35d64e5b2437b, type: 2}
+    colorOptions:
+      startColor:
+        key0:
+          serializedVersion: 2
+          rgba: 60927
+        key1:
+          serializedVersion: 2
+          rgba: 4278190335
+        key2:
+          serializedVersion: 2
+          rgba: 4278190335
+        key3:
+          serializedVersion: 2
+          rgba: 16774144
+        key4:
+          serializedVersion: 2
+          rgba: 16711752
+        key5:
+          serializedVersion: 2
+          rgba: 16253183
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 35483
+        ctime4: 44776
+        ctime5: 65535
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      onlyStartColor: 1
+      endColor:
+        key0:
+          serializedVersion: 2
+          rgba: 16731136
+        key1:
+          serializedVersion: 2
+          rgba: 4294901769
+        key2:
+          serializedVersion: 2
+          rgba: 4294923776
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      coreColor:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      coreCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 1.2139915
+          outSlope: 1.2139915
+          tangentMode: 10
+        - time: 0.4995161
+          value: 0.6064083
+          inSlope: 0.0011737347
+          outSlope: 0.0011737347
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -1.211644
+          outSlope: -1.211644
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      coreJitter: 0
+      fade: 1
+      fadePoint: 1
+    sizeOptions:
+      interpolation: 0
+      startWidthCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 3.1400113
+          outSlope: 3.1400113
+          tangentMode: 10
+        - time: 0.052606378
+          value: 0.16518462
+          inSlope: 1.4828272
+          outSlope: 1.4828272
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -0.17435691
+          outSlope: -0.17435691
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      onlyStartWidth: 1
+      endWidthCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+      segmentLength: 1
+      snapSegmentsToShape: 0
+      numberOfSmoothingSegments: 5
+      minNumberOfSegments: 1
+    propagationOptions:
+      propagationType: 1
+      globalSpeed: 50
+      timeCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+    emissionOptions: []
+    spatialNoise: []
+    textureOptions:
+      shapeTexture: {fileID: 0}
+      noiseTexture: {fileID: 0}
+      noiseCoef:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      animateTexture: 0
+      tileSize: 0
+      noiseSpeed: 0
+    lightsOptions:
+      lights: 0
+      lightsRange: 6
+      lightsIntensityMultiplyer: 10
+      renderMode: 0
+      priority: 0
+    flaresOptions:
+      startFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0
+        maxBrightnessDistance: 0
+        minBrightness: 0
+        minBrightnessDistance: 0
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      endFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0.5
+        maxBrightnessDistance: 0
+        minBrightness: 0.1
+        minBrightnessDistance: 50
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      useNoiseMask: 0
+      noiseMaskPowerCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    nesting:
+      Nested: 1
+      parentArcIndex: 0
+      combinedNesting: 0
+      secondaryArcIndex: 0
+      nestingCoef: 0
+    oscillations:
+    - type: 0
+      swirl: 0
+      planeRotation: 90
+      wavelength: 25
+      integerPeriods: 0
+      metric: 0
+      amplitude: 0.5
+      phase: 0
+      phaseMovementSpeed: 60
+      invisiblePriority: 0
+    shapeCurves: []
+  - material: {fileID: 2100000, guid: bc9b4591c08a2ed4fbd35d64e5b2437b, type: 2}
+    colorOptions:
+      startColor:
+        key0:
+          serializedVersion: 2
+          rgba: 16763392
+        key1:
+          serializedVersion: 2
+          rgba: 4279762688
+        key2:
+          serializedVersion: 2
+          rgba: 4280418048
+        key3:
+          serializedVersion: 2
+          rgba: 16774144
+        key4:
+          serializedVersion: 2
+          rgba: 16711752
+        key5:
+          serializedVersion: 2
+          rgba: 16253183
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 35483
+        ctime4: 44776
+        ctime5: 65535
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      onlyStartColor: 1
+      endColor:
+        key0:
+          serializedVersion: 2
+          rgba: 16731136
+        key1:
+          serializedVersion: 2
+          rgba: 4294901769
+        key2:
+          serializedVersion: 2
+          rgba: 4294923776
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      coreColor:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      coreCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 1.2139915
+          outSlope: 1.2139915
+          tangentMode: 10
+        - time: 0.4995161
+          value: 0.6064083
+          inSlope: 0.0011737347
+          outSlope: 0.0011737347
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -1.211644
+          outSlope: -1.211644
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      coreJitter: 0
+      fade: 1
+      fadePoint: 1
+    sizeOptions:
+      interpolation: 0
+      startWidthCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 3.1400113
+          outSlope: 3.1400113
+          tangentMode: 10
+        - time: 0.052606378
+          value: 0.16518462
+          inSlope: 1.4828272
+          outSlope: 1.4828272
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -0.17435691
+          outSlope: -0.17435691
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      onlyStartWidth: 1
+      endWidthCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+      segmentLength: 1
+      snapSegmentsToShape: 0
+      numberOfSmoothingSegments: 5
+      minNumberOfSegments: 1
+    propagationOptions:
+      propagationType: 1
+      globalSpeed: 50
+      timeCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+    emissionOptions: []
+    spatialNoise: []
+    textureOptions:
+      shapeTexture: {fileID: 0}
+      noiseTexture: {fileID: 0}
+      noiseCoef:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      animateTexture: 0
+      tileSize: 0
+      noiseSpeed: 0
+    lightsOptions:
+      lights: 0
+      lightsRange: 6
+      lightsIntensityMultiplyer: 10
+      renderMode: 0
+      priority: 0
+    flaresOptions:
+      startFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0
+        maxBrightnessDistance: 0
+        minBrightness: 0
+        minBrightnessDistance: 0
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      endFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0.5
+        maxBrightnessDistance: 0
+        minBrightness: 0.1
+        minBrightnessDistance: 50
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      useNoiseMask: 0
+      noiseMaskPowerCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    nesting:
+      Nested: 1
+      parentArcIndex: 0
+      combinedNesting: 0
+      secondaryArcIndex: 0
+      nestingCoef: 0
+    oscillations:
+    - type: 0
+      swirl: 0
+      planeRotation: 0
+      wavelength: 25
+      integerPeriods: 0
+      metric: 0
+      amplitude: 0.5
+      phase: 180
+      phaseMovementSpeed: 60
+      invisiblePriority: 0
+    shapeCurves: []
+  - material: {fileID: 2100000, guid: bc9b4591c08a2ed4fbd35d64e5b2437b, type: 2}
+    colorOptions:
+      startColor:
+        key0:
+          serializedVersion: 2
+          rgba: 16731136
+        key1:
+          serializedVersion: 2
+          rgba: 4288938239
+        key2:
+          serializedVersion: 2
+          rgba: 4294902011
+        key3:
+          serializedVersion: 2
+          rgba: 16774144
+        key4:
+          serializedVersion: 2
+          rgba: 16711752
+        key5:
+          serializedVersion: 2
+          rgba: 16253183
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 35483
+        ctime4: 44776
+        ctime5: 65535
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      onlyStartColor: 1
+      endColor:
+        key0:
+          serializedVersion: 2
+          rgba: 16731136
+        key1:
+          serializedVersion: 2
+          rgba: 4294901769
+        key2:
+          serializedVersion: 2
+          rgba: 4294923776
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 31804
+        ctime2: 65535
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 8867
+        atime2: 56283
+        atime3: 65535
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 3
+        m_NumAlphaKeys: 4
+      coreColor:
+        key0:
+          serializedVersion: 2
+          rgba: 4294967295
+        key1:
+          serializedVersion: 2
+          rgba: 4294967295
+        key2:
+          serializedVersion: 2
+          rgba: 0
+        key3:
+          serializedVersion: 2
+          rgba: 0
+        key4:
+          serializedVersion: 2
+          rgba: 0
+        key5:
+          serializedVersion: 2
+          rgba: 0
+        key6:
+          serializedVersion: 2
+          rgba: 0
+        key7:
+          serializedVersion: 2
+          rgba: 0
+        ctime0: 0
+        ctime1: 65535
+        ctime2: 0
+        ctime3: 0
+        ctime4: 0
+        ctime5: 0
+        ctime6: 0
+        ctime7: 0
+        atime0: 0
+        atime1: 65535
+        atime2: 0
+        atime3: 0
+        atime4: 0
+        atime5: 0
+        atime6: 0
+        atime7: 0
+        m_NumColorKeys: 2
+        m_NumAlphaKeys: 2
+      coreCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 1.2139915
+          outSlope: 1.2139915
+          tangentMode: 10
+        - time: 0.4995161
+          value: 0.6064083
+          inSlope: 0.0011737347
+          outSlope: 0.0011737347
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -1.211644
+          outSlope: -1.211644
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      coreJitter: 0
+      fade: 1
+      fadePoint: 1
+    sizeOptions:
+      interpolation: 0
+      startWidthCurve:
+        serializedVersion: 2
+        m_Curve:
+        - time: 0
+          value: 0
+          inSlope: 3.1400113
+          outSlope: 3.1400113
+          tangentMode: 10
+        - time: 0.052606378
+          value: 0.16518462
+          inSlope: 1.4828272
+          outSlope: 1.4828272
+          tangentMode: 10
+        - time: 1
+          value: 0
+          inSlope: -0.17435691
+          outSlope: -0.17435691
+          tangentMode: 10
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      onlyStartWidth: 1
+      endWidthCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+      segmentLength: 1
+      snapSegmentsToShape: 0
+      numberOfSmoothingSegments: 5
+      minNumberOfSegments: 1
+    propagationOptions:
+      propagationType: 1
+      globalSpeed: 50
+      timeCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 0
+        m_PostInfinity: 0
+        m_RotationOrder: 4
+    emissionOptions: []
+    spatialNoise: []
+    textureOptions:
+      shapeTexture: {fileID: 0}
+      noiseTexture: {fileID: 0}
+      noiseCoef:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      animateTexture: 0
+      tileSize: 0
+      noiseSpeed: 0
+    lightsOptions:
+      lights: 0
+      lightsRange: 6
+      lightsIntensityMultiplyer: 10
+      renderMode: 0
+      priority: 0
+    flaresOptions:
+      startFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0
+        maxBrightnessDistance: 0
+        minBrightness: 0
+        minBrightnessDistance: 0
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      endFlare:
+        enabled: 0
+        flare: {fileID: 0}
+        fadeSpeed: 50
+        maxBrightness: 0.5
+        maxBrightnessDistance: 0
+        minBrightness: 0.1
+        minBrightnessDistance: 50
+        ignoreLayers:
+          serializedVersion: 2
+          m_Bits: 6
+      useNoiseMask: 0
+      noiseMaskPowerCurve:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+    nesting:
+      Nested: 1
+      parentArcIndex: 0
+      combinedNesting: 0
+      secondaryArcIndex: 0
+      nestingCoef: 0
+    oscillations:
+    - type: 0
+      swirl: 0
+      planeRotation: 90
+      wavelength: 25
+      integerPeriods: 0
+      metric: 0
+      amplitude: 0.5
+      phase: 180
+      phaseMovementSpeed: 60
+      invisiblePriority: 0
+    shapeCurves: []
+  myCamera: {fileID: 0}
+  lifetime: 2
+  playbackType: 0
+  playbackMessages: 0
+  messageReciever: {fileID: 0}
+  elapsedTime: 0
+  playBackward: 0
+  freeze: 0
+  sizeMultiplier: 1
+  interpolation: 0
+  easeInOutOptions:
+    useEaseInOut: 1
+    easeInOutCurve:
+      serializedVersion: 2
+      m_Curve:
+      - time: 0
+        value: 0
+        inSlope: 2.0033321
+        outSlope: 2.0033321
+        tangentMode: 10
+      - time: 0.50050426
+        value: 1.0026762
+        inSlope: -0.0020223856
+        outSlope: -0.0020223856
+        tangentMode: 10
+      - time: 1
+        value: 0
+        inSlope: -2.007377
+        outSlope: -2.007377
+        tangentMode: 10
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    distance: 6
+  shapeTransforms: []
+  shapePoints: []
+  transformsDestructionFlags: 
+  closedShape: 0
+  oscillationNormal: {x: 0, y: 1, z: 0}
+  localSpaceOcillations: 0
+  reinitThreshold: 0.5
+  performancePriority: 0
+  customSorting: 0
+  sortingLayerName: 
+  sortingOrder: 0
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1

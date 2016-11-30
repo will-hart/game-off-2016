@@ -1,0 +1,55 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "HealthComp": {
+            "maxHealth": 350.0,
+            "currentHealth": 350.0,
+            "regenRate": 1.0,
+            "armorValue": 5,
+            "$type": "HealthComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "CreepProductionComp": {
+            "CreepId": 0,
+            "CreepTypeToProduce": "RangedCreep1",
+            "NextProductionTime": 0.0,
+            "ProductionPeriod": 3.0,
+            "AssignedHero": null,
+            "SpawnOffset": {
+                "x": -5.0,
+                "y": 3.0,
+                "z": 0.0
+            },
+            "$type": "CreepProductionComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 30,
+            "ScoutVisionRange": 10,
+            "$type": "InfluenceComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "FactoryRangedIcon",
+            "$type": "SelectableUnitComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 250,
+            "ConstructionTime": 5.0,
+            "ConstructionPercentage": 0.0,
+            "buildingType": "RangedCreepBuilding",
+            "$type": "BuildingComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingRangedCreepPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        }
+    },
+    "EntityName": "BuildingRangedCreep1"
+}

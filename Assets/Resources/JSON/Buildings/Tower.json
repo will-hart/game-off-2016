@@ -1,0 +1,75 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "InfluenceComp": {
+            "InfluenceStrength": 40,
+            "ScoutVisionRange": 30,
+            "$type": "InfluenceComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "TowerComp": {
+            "$type": "TowerComp"
+        },
+        "TacticalAiStateComp": {
+            "Stance": "Offensive",
+            "NavigationTarget": {
+                "x": 0.0,
+                "y": 0.0,
+                "z": 0.0
+            },
+            "NextAiPlanTime": 0.0,
+            "$type": "TacticalAiStateComp"
+        },
+        "HealthComp": {
+            "maxHealth": 300.0,
+            "currentHealth": 300.0,
+            "regenRate": 1.0,
+            "armorValue": 3,
+            "$type": "HealthComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingTowerPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 0,
+            "$type": "UnitPropertiesComp"
+        },
+        "MissileComp": {
+            "ProjectileType": "Laser",
+            "$type": "MissileComp"
+        },
+        "CombatComp": {
+            "MeleeDamageMultiplier": 1.0,
+            "RangedDamageMultiplier": 1.0,
+            "EnemiesInRange": [],
+            "$type": "CombatComp"
+        },
+        "AvailableWeaponsComp": {
+            "availableWeaponsList": [
+                {
+                    "baseDamage": 10,
+                    "pierceDamage": 10,
+                    "attackRange": 20.0,
+                    "canHitAirUnits": true,
+                    "DamageMode": "Single",
+                    "AttackType": "Ranged",
+                    "attackSpeed": 5.0
+                }
+            ],
+            "$type": "AvailableWeaponsComp"
+        },
+        "AudioSourceComp": {
+            "$type": "AudioSourceComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 300,
+            "ConstructionTime": 20.0,
+            "ConstructionPercentage": 0.0,
+            "$type": "BuildingComp"
+        }
+    },
+    "EntityName": "Tower"
+}

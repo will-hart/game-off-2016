@@ -1,0 +1,49 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "HealthComp": {
+            "maxHealth": 250.0,
+            "currentHealth": 250.0,
+            "regenRate": 1.0,
+            "armorValue": 20,
+            "$type": "HealthComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "TowerBaseIcon",
+            "$type": "SelectableUnitComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 200,
+            "ConstructionTime": 5.0,
+            "ConstructionPercentage": 0.0,
+            "buildingType": "BaseTower",
+            "$type": "BuildingComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingBaseTowerPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 1,
+            "$type": "UnitPropertiesComp"
+        },
+        "BuildingUpgradeComp": {
+            "possibleBuildingTypes": "LaserTower,MissileTower",
+            "$type": "BuildingUpgradeComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 40,
+            "ScoutVisionRange": 40,
+            "$type": "InfluenceComp"
+        },
+        "TowerComp": {
+            "$type": "TowerComp"
+        }
+    },
+    "EntityName": "BaseTower"
+}

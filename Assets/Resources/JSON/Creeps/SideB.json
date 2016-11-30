@@ -1,0 +1,48 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "StrategicAiStateComp": {
+            "FriendlyTeamId": 2,
+            "EnemyTeamId": 1,
+            "Posture": "Defensive",
+            "ActiveActions": [],
+            "BuildOrder": [
+                "Tower",
+                "Factory",
+                "Tower",
+                "Factory",
+                "Tower",
+                "Factory",
+                "Tower",
+                "Factory",
+                "Tower"
+            ],
+            "UpgradeOrder": [],
+            "NextAiPlanTime": 0.0,
+            "$type": "StrategicAiStateComp"
+        },
+        "SidePropertiesComp": {
+            "IsPlayerControlled": false,
+            "SideId": 2,
+            "Dna": 10,
+            "SpecialDna": 0,
+            "TowerCount": 0,
+            "HeroLimit": 6,
+            "UnlockedUpgrades": [],
+            "$type": "SidePropertiesComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 50,
+            "ScoutVisionRange": 0,
+            "$type": "InfluenceComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 2,
+            "$type": "UnitPropertiesComp"
+        }
+    },
+    "EntityName": "SideB"
+}

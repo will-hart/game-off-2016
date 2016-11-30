@@ -1,0 +1,42 @@
+{
+    "Wrapper": null,
+    "_components": {
+        "HealthComp": {
+            "maxHealth": 500.0,
+            "currentHealth": 500.0,
+            "regenRate": 0.0,
+            "armorValue": 25,
+            "$type": "HealthComp"
+        },
+        "PositionComp": {
+            "$type": "PositionComp"
+        },
+        "UnitPropertiesComp": {
+            "teamID": 0,
+            "$type": "UnitPropertiesComp"
+        },
+        "InfluenceComp": {
+            "InfluenceStrength": 40,
+            "ScoutVisionRange": 10,
+            "$type": "InfluenceComp"
+        },
+        "BuildingComp": {
+            "ConstructionCost": 0,
+            "ConstructionTime": 0.0,
+            "ConstructionPercentage": 0.0,
+            "buildingType": "Cortex",
+            "$type": "BuildingComp"
+        },
+        "UnityPrefabComp": {
+            "prefabType": "BuildingCortexPrefab",
+            "$type": "UnityPrefabComp"
+        },
+        "SelectableUnitComp": {
+            "IsSelected": false,
+            "selectionCircle": null,
+            "GuiIconType": "Cortex",
+            "$type": "SelectableUnitComp"
+        }
+    },
+    "EntityName": "Cortex"
+}
