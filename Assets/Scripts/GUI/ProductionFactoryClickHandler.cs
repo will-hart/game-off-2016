@@ -4,16 +4,16 @@ using System.Linq;
 using GameGHJ.Systems;
 using UnityEngine;
 
-public class ProductionFactoryClickHandler : ZenBehaviour, IOnStart
+public class ProductionFactoryClickHandler : ZenBehaviour
 {
 	public override int ExecutionPriority => 0;
 	public override Type ObjectType => typeof(ProductionFactoryClickHandler);
 
-	private SidePropertiesComp playerProps;
+	private SidePropertiesComp _playerProps;
 
-	public void OnStart()
+	public void GetPlayerProps()
 	{
-		playerProps = ZenBehaviourManager.Instance.Get<SidePropertiesComp>(ComponentTypes.SidePropertiesComp).First(x => x.IsPlayerControlled == true);
+		_playerProps = ZenBehaviourManager.Instance.Get<SidePropertiesComp>(ComponentTypes.SidePropertiesComp).First(x => x.IsPlayerControlled == true);
 	}
 	
 	private Vector3 SpawnOffsetToPreventFallingThroughTheGround;
@@ -30,15 +30,12 @@ public class ProductionFactoryClickHandler : ZenBehaviour, IOnStart
 		GameObject hero;
 		var bt = bldg.Owner.GetComponent<BuildingComp>().buildingType;
 		SpawnOffsetToPreventFallingThroughTheGround = bldg.Owner.GetComponent<CreepProductionComp>().SpawnOffset;
-		if (bt == BuildingType.MeleeCreepBuilding)
-		{
-			hero = CreateEntity("Heroes", "HeroMelee", initpos + SpawnOffsetToPreventFallingThroughTheGround);
-		} else
-		{
-			hero = CreateEntity("Heroes", "HeroRanged", initpos + SpawnOffsetToPreventFallingThroughTheGround);
-		} 
+	    hero = CreateEntity(
+	        "Heroes",
+	        bt == BuildingType.MeleeCreepBuilding ? "HeroMelee" : "HeroRanged",
+	        initpos + SpawnOffsetToPreventFallingThroughTheGround);
 
-		hero.GetComponent<EntityWrapper>().entity.GetComponent<UnitPropertiesComp>().teamID = 1; //hardcoded player team
+	    hero.GetComponent<EntityWrapper>().entity.GetComponent<UnitPropertiesComp>().teamID = 1; //hardcoded player team
 		bldg.Owner.GetComponent<CreepProductionComp>().AssignedHero =
 			hero.GetComponent<EntityWrapper>().entity.GetComponent<HeroComp>();
 		bldg.Owner.GetComponent<CreepProductionComp>().AssignedHero.Name = "NewProducedHero";
@@ -56,13 +53,21 @@ public class ProductionFactoryClickHandler : ZenBehaviour, IOnStart
 
 	private bool CheckAndDeductCost()
 	{
-		if (playerProps.Dna < 100)
+	    if (_playerProps == null)
+	    {
+            GetPlayerProps();
+
+            if (_playerProps == null) Debug.LogError("Unable to find a player, aborting");
+	        return false;
+	    }
+
+	    if (_playerProps.Dna < 100)
 		{
 			GUIStatLabelManager.Instance.SetNotificationText("Insufficient DNA");
 			return false;
 		}
 
-		playerProps.Dna -= 100;
+		_playerProps.Dna -= 100;
 		return true;
 	}
 }
