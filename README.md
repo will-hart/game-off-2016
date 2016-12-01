@@ -36,4 +36,4 @@ See `LICENSE` in the repo
 
 ## Download
 
-A build is available from https://www.dropbox.com/s/abhgh1fvdyf91bk/RTS_Win.zip?dl=0 or https://drive.google.com/open?id=0B9l1RNzlYNWTdGw4YzYzNVBxZjA
+A build is available in the releases above
